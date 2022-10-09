@@ -46,8 +46,8 @@ header{
 }
 
 h1,h2,h3,h4,h5,h6,p,ul{
-    margin-top: 0;
-    margin-bottom: 0;
+    margin: 0;
+    padding: 0;
 }
 
 .logo-1{
@@ -81,12 +81,12 @@ nav{
 
 .nav-items{
     display: flex;
-    padding: 32px 0;
     gap: 50px;
     margin-left: 93px;
 }
 
 .site-nav{
+    display:block;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -106,6 +106,7 @@ nav{
 }
 
 .site-contact{
+    display: block;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -123,9 +124,6 @@ nav{
 .hero {
     background-color:var(--hero-color);
     text-align: center;
-}
-
-.hero-banner{
     padding-top: 200px;
     padding-bottom: 200px;
 }
@@ -247,15 +245,12 @@ img {
 
 footer{
     background-color:var(--hero-color); 
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
-.footer-banner{
-    padding: 60px 0;
-}
-
-.address-items{
-    padding: 0;
-    margin-top: 20px;
+.logo-footer{
+    margin-bottom: 20px;
 }
 
 .address-items-point{
@@ -327,14 +322,11 @@ footer{
     padding: 0;
     display: flex;
     flex-wrap: wrap;
-    margin-left: -30px;
-    margin-top: -30px;
+    gap:30px;
 }
 
 .projects-list > .item{
     flex-basis: calc(100%/3 -30px);
-    margin-left: 30px;
-    margin-top: 30px;
 }
 
 .project-card{
